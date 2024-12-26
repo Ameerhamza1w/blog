@@ -128,7 +128,11 @@ const posts = [
   },
 ];
 
-export default function Post({ params }: { params: { id: string } }) {
+interface PostProps {
+  params: { id: string };
+}
+
+export default function Post({ params }: PostProps) {
   const { id } = params;
   const post = posts.find((p) => p.id === id);
 
@@ -178,7 +182,7 @@ export default function Post({ params }: { params: { id: string } }) {
       </div>
 
       <div className="mt-10">
-        <CommentSection postId={""} />
+        <CommentSection postId={id} />
       </div>
     </div>
   );
