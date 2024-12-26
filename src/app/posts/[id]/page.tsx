@@ -129,11 +129,22 @@ const posts = [
 ];
 
 type PostProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>; // Now params is a Promise
 };
 
 export default function Post({ params }: PostProps) {
-  const { id } = params;
+  const [resolvedParams, setResolvedParams] = React.useState<{ id: string } | null>(null);
+
+  // Unwrap the params Promise
+  React.useEffect(() => {
+    params.then((resolved) => setResolvedParams(resolved));
+  }, [params]);
+
+  if (!resolvedParams) {
+    return <div>Loading...</div>;
+  }
+
+  const { id } = resolvedParams;
   const post = posts.find((p) => p.id === id);
 
   if (!post) {
