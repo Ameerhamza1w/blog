@@ -100,35 +100,39 @@ const posts = [
     description:
       "Data visualization is the art of representing data in a visual format, making complex datasets easier to understand. Python provides powerful libraries like Matplotlib and Seaborn that allow you to create stunning visualizations such as bar charts, line graphs, and heatmaps. By visualizing data, you can identify trends, patterns, and outliers, which can provide valuable insights for decision-making.\n\nLearning how to visualize data using Python is an important skill for data analysts and data scientists. In this blog post, we'll explore how to use Python to create effective and visually appealing visualizations.",
     date: "12/31/2024",
-    image: "data.png",
+    image: "pydata.png",
   },
   {
     id: "13",
-    title: "Cloud Computing: Transforming Storage",
+    title: "Blockchain: Beyond Cryptocurrency",
     description:
-      "Cloud computing has revolutionized the way we store and access data. By using remote servers hosted on the internet, businesses and individuals can store and access data without the need for physical storage devices. Cloud computing offers scalability, flexibility, and cost-efficiency, enabling organizations to scale their infrastructure based on demand.\n\nIn this blog post, we explore how cloud computing works, its benefits, and how companies are leveraging it to store and manage vast amounts of data.",
-    date: "11/1/2024",
-    image: "cc.png",
+      "Blockchain is most commonly associated with cryptocurrencies like Bitcoin, but its potential extends far beyond that. Blockchain is a decentralized and distributed ledger technology that allows for secure, transparent, and tamper-proof transactions. It has applications in fields like supply chain management, healthcare, finance, and more.\n\nBy understanding the basics of blockchain and its key components (blocks, nodes, miners), you'll gain insight into how this revolutionary technology works and how it’s transforming various industries.",
+    date: "01/01/2025",
+    image: "blockchain.png",
   },
   {
     id: "14",
-    title: "Progressive Web Apps: The Future of Mobile",
+    title: "The Future of Virtual Reality",
     description:
-      "Progressive Web Apps (PWAs) combine the best features of websites and mobile apps, providing a fast, reliable, and engaging user experience. PWAs are designed to work on any device, regardless of the operating system, and can be accessed directly through a browser without the need to install them from an app store.\n\nIn this blog post, we'll explore the benefits of PWAs, including offline functionality, push notifications, and faster load times. We'll also cover how to create a PWA and why it's an essential skill for modern web developers.",
-    date: "10/2/2024",
-    image: "ma.png",
+      "Virtual Reality (VR) is an immersive technology that allows users to experience and interact with computer-generated environments. From gaming and entertainment to education and healthcare, VR is making its mark in a variety of industries. As the technology evolves, VR has the potential to revolutionize how we work, play, and learn.\n\nThis post will explore the future of VR, its applications in various fields, and how advancements like 5G and improved hardware are making VR more accessible and realistic.",
+    date: "01/02/2025",
+    image: "vr.png",
   },
   {
     id: "15",
-    title: "SEO Strategies for Developers",
+    title: "5G: The Next Generation of Connectivity",
     description:
-      "Search Engine Optimization (SEO) is the process of optimizing a website to rank higher in search engine results pages. Developers can play a key role in SEO by implementing best practices in web development, such as optimizing page speed, using semantic HTML tags, and ensuring the website is mobile-friendly.\n\nThis blog post covers essential SEO strategies for developers, including optimizing content, improving site architecture, and enhancing user experience to help increase organic traffic and improve search rankings.",
-    date: "10/5/2024",
-    image: "seo.png",
+      "5G is the fifth generation of mobile network technology, and it promises to revolutionize how we connect to the internet. With faster speeds, lower latency, and the ability to connect more devices, 5G will enable new technologies like the Internet of Things (IoT), autonomous vehicles, and smart cities.\n\nIn this post, we'll discuss the benefits of 5G, the challenges it faces, and the impact it will have on industries ranging from telecommunications to healthcare.",
+    date: "01/03/2025",
+    image: "5g.png",
   },
 ];
 
-export default function Post({ params }: { params: { id: string } }) {
+type PostProps = {
+  params: { id: string };
+};
+
+export default function Post({ params }: PostProps) {
   const { id } = params;
   const post = posts.find((p) => p.id === id);
 
