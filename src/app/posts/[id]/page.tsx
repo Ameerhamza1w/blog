@@ -100,7 +100,7 @@ const posts = [
     description:
       "Data visualization is the art of representing data in a visual format, making complex datasets easier to understand. Python provides powerful libraries like Matplotlib and Seaborn that allow you to create stunning visualizations such as bar charts, line graphs, and heatmaps. By visualizing data, you can identify trends, patterns, and outliers, which can provide valuable insights for decision-making.\n\nLearning how to visualize data using Python is an important skill for data analysts and data scientists. In this blog post, we'll explore how to use Python to create effective and visually appealing visualizations.",
     date: "12/31/2024",
-    image: "pydata.png",
+    image: "data.png",
   },
   {
     id: "13",
@@ -108,7 +108,7 @@ const posts = [
     description:
       "Blockchain is most commonly associated with cryptocurrencies like Bitcoin, but its potential extends far beyond that. Blockchain is a decentralized and distributed ledger technology that allows for secure, transparent, and tamper-proof transactions. It has applications in fields like supply chain management, healthcare, finance, and more.\n\nBy understanding the basics of blockchain and its key components (blocks, nodes, miners), you'll gain insight into how this revolutionary technology works and how it’s transforming various industries.",
     date: "01/01/2025",
-    image: "blockchain.png",
+    image: "cc.png",
   },
   {
     id: "14",
@@ -116,7 +116,7 @@ const posts = [
     description:
       "Virtual Reality (VR) is an immersive technology that allows users to experience and interact with computer-generated environments. From gaming and entertainment to education and healthcare, VR is making its mark in a variety of industries. As the technology evolves, VR has the potential to revolutionize how we work, play, and learn.\n\nThis post will explore the future of VR, its applications in various fields, and how advancements like 5G and improved hardware are making VR more accessible and realistic.",
     date: "01/02/2025",
-    image: "vr.png",
+    image: "ma.png",
   },
   {
     id: "15",
@@ -124,7 +124,7 @@ const posts = [
     description:
       "5G is the fifth generation of mobile network technology, and it promises to revolutionize how we connect to the internet. With faster speeds, lower latency, and the ability to connect more devices, 5G will enable new technologies like the Internet of Things (IoT), autonomous vehicles, and smart cities.\n\nIn this post, we'll discuss the benefits of 5G, the challenges it faces, and the impact it will have on industries ranging from telecommunications to healthcare.",
     date: "01/03/2025",
-    image: "5g.png",
+    image: "seo.png",
   },
 ];
 
